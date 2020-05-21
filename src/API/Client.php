@@ -23,7 +23,8 @@ class Client
         $this->client = new GuzzleClient([
             'base_uri' => $environment == self::ENVIRONMENT_SANDBOX ? self::API_ENDPOINT_SANDBOX : self::API_ENDPOINT_PRODUCTION,
             'headers' => [
-                'Authorization' => 'Bearer ' . $token
+                'Authorization' => 'Bearer ' . $token,
+                'Accept' => 'application/json'
             ]
         ]);
     }
