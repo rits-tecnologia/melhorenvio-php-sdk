@@ -13,7 +13,7 @@ class MelhorEnvio {
      */
     protected $client;
 
-    public function __construct(string $token)
+    public function __construct($token)
     {
         $this->client = new Client($token);
     }

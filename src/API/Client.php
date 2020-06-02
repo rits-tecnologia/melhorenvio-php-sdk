@@ -16,7 +16,7 @@ class Client
     private $environment;
     private $token;
 
-    public function __construct(string $token, $environment = 'sandbox')
+    public function __construct($token, $environment = 'sandbox')
     {
         $this->token = $token;
         $this->environment = $environment;
